@@ -80,3 +80,7 @@ Entities are registered lazily: the integration waits for the device to report i
 
 Thanks to:
 - @markusstephany
+
+## License
+
+This integration is released under the MIT License. See LICENSE file for details.
