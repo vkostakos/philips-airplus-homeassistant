@@ -2,8 +2,6 @@
 
 Custom integration for Philips Air+ air purifiers. It communicates with the Philips/Versuni cloud service using the same MQTT protocol as the official mobile app.
 
-This is a fork of [ShorMeneses/philips-airplus-homeassistant](https://github.com/ShorMeneses/philips-airplus-homeassistant), significantly extended and rearchitected: the original supported only AC0650/10 with a hardcoded device model; this fork introduces a model-agnostic, YAML-driven entity system and adds full AC0651/10 support.
-
 ## Features
 
 - Fan control with preset modes and on/off
@@ -79,3 +77,8 @@ Both accept an optional `device_uuid` parameter to target a specific device when
 All device-specific behavior is driven by `models.yaml`. Each model entry declares its MQTT properties, preset modes, and which sensors, switches, and buttons to create. Adding support for a new model requires only a new entry in `models.yaml`.
 
 Entities are registered lazily: the integration waits for the device to report its model identifier over MQTT before creating entities, so `device_info` can contain the correct model name from the start.
+
+## Contributions
+
+Thanks to:
+- @markusstephany
