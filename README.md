@@ -79,6 +79,7 @@ Entities are registered lazily: the integration waits for the device to report i
 ## Contributions
 
 Thanks to:
+- @vkostakos 
 - @markusstephany
 
 ## License
